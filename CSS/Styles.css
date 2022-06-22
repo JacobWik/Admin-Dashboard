@@ -1,0 +1,41 @@
+* {
+  color: white;
+  font-style: bold;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+}
+container {
+  height: 100vh;
+  width: 100vw;
+}
+container {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+.sidebar {
+  background-color: burlywood;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: grid;
+}
+.sidebar-menu ul,
+.sidebar-extramenu ul {
+  list-style-type: none;
+}
+
+.sidebar-menu ul li,
+.sidebar-extramenu ul li {
+  display: grid;
+  grid-template: 1fr / 1fr 5fr;
+  align-items: center;
+}
+
+.header {
+  background-color: aqua;
+}
+
+.main-content {
+  background-color: red;
+}
