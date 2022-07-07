@@ -4,6 +4,10 @@
   font-weight: 900;
   font-family: "Times New Roman", Times, serif;
 }
+
+/* dont do this
+  making all containers have 100 vh/vw is gonna cause a lot of problems xD
+*/
 container {
   height: 100vh;
   width: 100vw;
@@ -38,4 +42,14 @@ container {
 
 .main-content {
   background-color: red;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.your-Projects {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.article-container {
 }
